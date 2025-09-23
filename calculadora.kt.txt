@@ -117,7 +117,7 @@ fun CalculadoraApp() {
                     error = "Debe ingresar números válidos"
                     resultado = null
                 } else {
-                    val res = calcular(num1, num2, operacion) // ✅ ahora sí funciona
+                    val res = calcular(num1, num2, operacion)
                     if (res != null) {
                         resultado = res.toString()
                         error = null
