@@ -1,4 +1,4 @@
-simple en kotlin web 
+simple en kotlin web martes 23
 
 fun main() {
     val num1 = 8
