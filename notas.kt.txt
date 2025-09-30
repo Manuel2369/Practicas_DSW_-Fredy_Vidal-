@@ -1,0 +1,44 @@
+fun main() {
+   /*
+    //arreglo definidos
+    val numbers = arrayOf(1,2,3,4)
+    
+    //arreglo nulos
+    val numbersNull: Array<Int?> = arrayOfNulls(5)
+    numbersNull[0] = 2
+    numbersNull[1] = 3 
+    numbersNull[2] = 0
+    numbersNull[3] = 23
+    numbersNull[4] = 69
+
+    
+    for(i in numbers.indices){
+        if(i == 0){
+            numbersNull[i] = 2 
+            println("Indice: $i, Valor = ${numbersNull[i]}")
+        }
+    }
+  */
+    
+    
+    val notasNull: Array<Int?> = arrayOfNulls(5)
+    notasNull[0] = 8
+    notasNull[1] = 7 
+    notasNull[2] = 9
+    notasNull[3] = 10
+    notasNull[4] = 8
+
+    var suma = 0
+    
+    for(i in notasNull.indices){
+        
+            println("Indice: $i, Valor = ${notasNull[i]}")
+            suma += notasNull[i] ?: 0
+        
+        if (i == 4){
+        val promedio = suma.toDouble() / notasNull.size
+            println("El promedio de las 5 notas es: $promedio")
+    }
+    }
+    
+}
